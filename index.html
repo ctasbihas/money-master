@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My cost in per month</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <!-- about page -->
+     <header class="flex justify-center mt-4">
+          <h1 class="text-4xl font-bold text-cyan-500">
+               My total cost in per month
+          </h1>
+     </header>
+
+     <section class="container mx-auto grid grid-cols-2 gap-0 mt-8 mb-16">
+          <!-- images section -->
+          <div>
+               <img src="images/money-master.png" alt="">
+          </div>
+
+          <!-- income and cost section -->
+          <section class="bg-stone-100">
+               <!-- Income in a month -->
+               <div class="mt-16">
+                    <h1 class="text-2xl font-bold flex justify-center">Income</h1>
+                    <h1 class="flex justify-center mt-4">
+                         Income: <input type="text" id="income-input" class="bg-stone-300 ml-4">
+                    </h1>
+               </div>
+
+               <!-- Expended in a month -->
+               <div class="mt-8">
+                    <h1 class="text-2xl font-bold flex justify-center">Expenses</h1>
+                    <h1 class="flex justify-center ml-5 mt-4">
+                         Food: <input type="text" id="food-expenses" class="bg-stone-300 ml-4">
+                    </h1>
+                    <h1 class="flex justify-center ml-5 mt-4">
+                         Rent: <input type="text" id="rent-expenses" class="bg-stone-300 ml-4">
+                    </h1>
+                    <h1 class="flex justify-center ml-1.5 mt-4">
+                         Clothes: <input type="text" id="clothes-expenses" class="bg-stone-300 ml-4">
+                    </h1>
+                    <button id="calculate-btn" class="bg-sky-500 px-8 py-2 rounded-lg mt-4 flex mx-auto justify-center text-white font-bold">Calculate</button>
+               </div>
+
+               <!-- total expenses and balane -->
+               <div>
+                    <h1 class="text-2xl font-bold flex justify-center">Total Expenses: <span id="total-expenses"> 00</span></h1>
+                    <h1 class="text-2xl font-bold flex justify-center">Balance: <span id="balance">00</span></h1>
+               </div>
+
+               <!-- saving money -->
+               <div>
+                    <h1 class="flex justify-evenly items-center">
+                         Save: <input id="save-amount" type="text" class="bg-stone-300"> % <button id="save-btn" class="bg-sky-500 px-8 py-2 rounded-lg text-white font-bold">Save</button>
+                    </h1>
+               </div>
+
+               <!-- saving and currect balance -->
+               <div class="font-bold">
+                    <h1 class="flex justify-center">Saving Amount:  <span id="saved-amount">00</span></h1>
+                    <h1 class="flex justify-center">Remaining Balance: <span id="remaining-balance">00</span></h1>
+               </div>
+          </section>
+     </section>
+     <script src="js/main.js"></script>
+</body>
+
+</html>
